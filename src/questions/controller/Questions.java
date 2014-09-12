@@ -61,10 +61,34 @@ public class Questions
 		{
 			JOptionPane.showMessageDialog(null, "You must be in high school.");
 			String school = JOptionPane.showInputDialog(null, "What high school do you go to?");
-			if (Arrays.asList("alta", "alta high school", "alta high").contains(school.toLowerCase())){
-				JOptionPane.showMessageDialog(null, "Alta High School's mascot is the Hawks. Their colors are black and silver.");
-			}
 			
+			if (Arrays.asList("alta", "alta high school", "alta high").contains(school.toLowerCase())){
+				JOptionPane.showMessageDialog(null, "Alta High School's mascot is the hawks. Their colors are black and silver.");
+			}
+			else if (Arrays.asList("brighton", "brighton high", "brightong high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "Brighton High School's mascot is the bengal tiger. Their colors are blue, orange, and white.");
+			}
+			else if (Arrays.asList("hillcrest", "hillcrest high", "hillcrest high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "Hillcrest High School's mascot is the huskies. Their colors are green and white.");
+			}
+			else if (Arrays.asList("bingham", "bingham high", "bingham high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "Bingham High School's mascot is the Miners. Their colors are blue and white.");
+			}
+			else if (Arrays.asList("copper hills", "copper hills high", "copper hills high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "Copper Hills High School's mascot is the Grizzlys. Their colors are green and blue.");
+			}
+			else if (Arrays.asList("herriman", "herriman high", "herriman high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "Herriman High School's mascot is the Mustangs. Their colors are blue, red, and gold.");
+			}
+			else if (Arrays.asList("riverton", "riverton high", "riverton high school").contains(school.toLowerCase()))
+			{
+				JOptionPane.showMessageDialog(null, "");
+			}
 			
 			
 		}
