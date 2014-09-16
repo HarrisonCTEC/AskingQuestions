@@ -44,10 +44,10 @@ public class Questions
 		}
 
 	}
-	
+
 	private void askQuestionsGUI()
 	{
-		String name = JOptionPane.showInputDialog("What is your name?");
+		String name = JOptionPane.showInputDialog("123What is your name?");
 		String age = JOptionPane.showInputDialog(name + ", how old are you?");
 		if (Integer.parseInt(age) >= 50)
 		{
@@ -55,13 +55,13 @@ public class Questions
 		}
 		else if (Integer.parseInt(age) >= 19) {
 			JOptionPane.showMessageDialog(null, "Ok.");
-			
+
 		}
 		else
 		{
 			JOptionPane.showMessageDialog(null, "You must be in high school.");
 			String school = JOptionPane.showInputDialog(null, "What high school do you go to?");
-			
+
 			if (Arrays.asList("alta", "alta high school", "alta high").contains(school.toLowerCase())){
 				JOptionPane.showMessageDialog(null, "Alta High School's mascot is the hawks. Their colors are black and silver.");
 			}
@@ -89,21 +89,21 @@ public class Questions
 			{
 				JOptionPane.showMessageDialog(null, "");
 			}
-			
-			
+
+
 		}
-		
+
 	}
-	
-	
+
+
 	public void askSomeoneElseQuestions()
 	{
 
 		String[] myStringArray = {"a","b","c"};
-		
+
 		System.out.println("What is your name?");
 		String name = questionScanner.nextLine();
-		
+
 		System.out.println(name + ", how old are you?");
 		String age = questionScanner.nextLine();
 		if (Integer.parseInt(age) >= 50)
@@ -114,9 +114,9 @@ public class Questions
 		{
 			System.out.println("Cool!");
 		}
-		
+
 		System.out.println("What high school do you go to?");
 		String school = questionScanner.nextLine();
-		
+
 	}
 }
